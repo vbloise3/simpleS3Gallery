@@ -9,12 +9,12 @@ var multiparty = require("multiparty");
 
 var app = express();
 var s3 = new AWS.S3({
-    "region": "us-east-1"
+    "region": "us-west-2"
 });
 
 var bucket = process.argv[2];
 if (!bucket || bucket.length < 1) {
-    console.error("Missing S3 bucket. Start with node server.js BUCKETNAME instead.");
+    console.error("Missing S3 bucket. Start with node server.js BUCKETNAME instead. Yo!");
     process.exit(1);
 }
 
